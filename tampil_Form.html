@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data Mahasiswa</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#e6f2fc] to-[#b9d9eb] p-4">
+    <form
+      action="#"
+      method="POST"
+      class="w-full max-w-3xl bg-white/30 backdrop-blur-md rounded-2xl shadow-xl p-8 space-y-6"
+    >
+      <h1 class="text-2xl font-semibold text-sky-900">Form Data Mahasiswa</h1>
+
+      <!-- Name -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label for="first_name" class="block text-sky-900 font-medium mb-1"
+            >Nama Depan<span class="text-pink-600"> *</span></label
+          >
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            required
+            class="w-full rounded-lg border border-sky-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
+          />
+        </div>
+        <div>
+          <label for="last_name" class="block text-sky-900 font-medium mb-1"
+            >Nama Belakang<span class="text-pink-600"> *</span></label
+            ></label
+          >
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            class="w-full rounded-lg border border-sky-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
+          />
+        </div>
+      </div>
+
+      <!-- Username -->
+      <label for="first_name" class="block text-sky-900 font-medium mb-1"
+      > Jenis kelamin     <span class="text-pink-600"> *</span></label
+>
+<input type="checkbox"  type="email"
+id="email"
+name="email"
+required >PRIA              <input type="checkbox"  type="email"
+id="email"
+name="email"
+required >WANITA<br/>
+<div>
+    <label for="first_name" class="block text-sky-900 font-medium mb-1"
+    >
+Agama<span class="text-pink-600"> *</span></label
+><select type="checkbox"  type="email"
+id="email"
+name="email"
+required class="w-full rounded-lg border border-sky-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        <option selected>-</option>
+                        <option>ISLAM</option>
+                        <option>KRISTEN</option>
+                        <option>HINDU</option>
+                        <option>BUDHA</option>
+                        <option>KONGHUCU</option>
+                        <option>KATOLIK</option>
+                        </select><br/>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sky-900 font-medium mb-1">
+Jurusan <span class="text-pink-600"> *</span></label
+><select  type="checkbox"  type="email"
+id="email"
+name="email"
+required class="w-full rounded-lg border border-sky-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        <option selected>-</option>
+                        <option>TEKNOLOGI INFORMASI</option>
+                        <option>SISTEM INFORMASI</option>
+                        <option>SOFTWARE ENGINERING</option>
+                        <option>AKUNTANSI</option>
+                        <option>MANAGEMENT</option>
+                        <option>HUKUM</option>
+                        </select><br/>
+                    </div>
+                    <div>
+                        <label for="bio" class="block text-sky-900 font-medium mb-1"
+                          >Alamat *</label
+                        >
+                        <textarea
+                          id="bio"
+                          name="bio"
+                          rows="4"
+                          class="w-full rounded-lg border border-sky-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                          placeholder="Share a little information about yourself."
+                        ></textarea>
+                      </div>
+
+      <!-- Submit Button -->
+      <br>
+      <div>
+        <button
+          type="submit"
+          class="px-6 py-2 bg-pink-600 text-white font-semibold rounded-lg shadow-md hover:bg-pink-700 transition"
+        >
+          Submit
+        </button>
+        <button
+          type="reset"
+          class="px-6 py-2 bg-pink-600 text-white font-semibold rounded-lg shadow-md hover:bg-pink-700 transition"
+        >
+          Reset
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
